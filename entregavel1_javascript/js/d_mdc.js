@@ -4,7 +4,7 @@ function mdc() {
 
     let mdcResult = 0;
 
-    for (let index_div = 0; index_div <= numbers.sort(function (a, b) {  return a - b;  })[0]; index_div++) {
+    for (let index_div = 1; index_div <= numbers.sort(function (a, b) {  return a - b;  })[0]; index_div++) {
 
         let countNumberOfDivisions = 0;
 

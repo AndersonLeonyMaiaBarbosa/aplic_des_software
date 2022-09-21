@@ -5,6 +5,7 @@ import entregavel1_java.classes.B_Somatorio;
 import entregavel1_java.classes.C_Fibonacci;
 import entregavel1_java.classes.D_Mdc;
 import entregavel1_java.classes.E_Ordenacao;
+import entregavel1_java.classes.F_Contagem;
 
 public class main {
 
@@ -15,7 +16,8 @@ public class main {
         //System.out.println(C_Fibonacci.applyFibonacci());
         //System.out.println(D_Mdc.mdc());
         //System.out.println(E_Ordenacao.applyQuickySort());
-        System.out.println(D_Mdc.mdc());
+       //System.out.println(D_Mdc.mdc());
+       System.out.println(F_Contagem.count());
     }
     
 }

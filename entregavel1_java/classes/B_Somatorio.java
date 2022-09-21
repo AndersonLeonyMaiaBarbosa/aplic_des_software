@@ -9,6 +9,7 @@ public class B_Somatorio {
         
         System.out.println("Informe um conjunto de números que deseja somar (Use a vírgula para separar. Ex: 3,4,5,6");
         String conjuntoNumerosTexto = sc1.next();
+        sc1.close();
 
         String[] conjuntoNumerosArray = conjuntoNumerosTexto.split(",");
 

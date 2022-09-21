@@ -13,7 +13,7 @@ public class D_Mdc {
         
         System.out.println("Informe um conjunto de números e veja o mdc (Use a vírgula para separar. Ex: 3,4,5,6");
         String numbersStr = sc1.next();
-        sc1.close();
+
         String[] numbersArrayOfStrings = numbersStr.split(",");
         int[] numbers = new int[numbersArrayOfStrings.length];
         for (int i = 0; i < numbersArrayOfStrings.length; i++) {

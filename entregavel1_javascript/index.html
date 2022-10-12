@@ -3,18 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Entregável 1</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
       </head>
     <body>
-        <button onclick="numPrimo()">Numero primo</button>
-        <button onclick="somatorio()">Somatório</button>
-        <button onclick="applyFibonacci()">Fibonacci</button>
-        <button onclick="mdc()">Mdc</button>
-        <button onclick="applyQuickySort()">Ordenação</button>
-        <button onclick="count()">Contagem</button>
+        <div class="d-flex flex-column">
+            <button class="btn btn-primary" onclick="numPrimo()">Numero primo</button>
+            <button class="btn btn-info" onclick="somatorio()">Somatório</button>
+            <button class="btn btn-primary" onclick="applyFibonacci()">Fibonacci</button>
+            <button  class="btn btn-info" onclick="mdc()">Mdc</button>
+            <button class="btn btn-primary" onclick="applyQuickySort()">Ordenação</button>
+            <button class="btn btn-info" onclick="count()">Contagem</button>
+        </div>
     </body>
 
     <script src="js/a_numeroPrimo.js"></script>
-    <script src="js/b_somatorio copy.js"></script>
+    <script src="js/b_somatorio.js"></script>
     <script src="js/c_Fibonacci.js"></script>
     <script src="js/d_mdc.js"></script>
     <script src="js/e_ordenacao.js"></script>

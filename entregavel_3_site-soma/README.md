@@ -1,3 +1,11 @@
+# Steps:
+- Open terminal
+- git clone <repository_name>
+- cd entregavel_3_site-soma
+- npm i
+- npm run start
+- Open postman and use Apis below:
+
 # Api - soma ( http://localhost:3001/soma )
   ![image](https://user-images.githubusercontent.com/42249998/200445311-0bd60a24-5a82-4fad-b81a-fb688e509850.png)
 

@@ -42,9 +42,14 @@ function quickSort(array, left, right) {
     return array;
 }
 
-function applyQuickySort() {
-    let beforeSorted = ((prompt("Informe um conjunto de números e veja a ordenação QuickySort (Use a vírgula para separar. Ex: 3,4,5,6")).split(",")).map((value) => {return parseInt(value)});
+function applyQuickySort(values) {
+    // let beforeSorted = ((prompt("Informe um conjunto de números e veja a ordenação QuickySort (Use a vírgula para separar. Ex: 3,4,5,6")).split(",")).map((value) => {return parseInt(value)});
+    let beforeSorted = values.split(",").map((value) => {return parseInt(value)});
     let arrayToBeSorted = beforeSorted.map((value) => {return value});
     let afterSort = quickSort(arrayToBeSorted, 0, arrayToBeSorted.length - 1);
-    alert(`No QuickySort: ${beforeSorted}\nW/ QuickySort: ${afterSort}`);
+    // alert(`No QuickySort: ${beforeSorted}\nW/ QuickySort: ${afterSort}`);
+
+    return `No QuickySort: ${beforeSorted}\nW/ QuickySort: ${afterSort}`;
 }
+
+module.exports = { applyQuickySort };

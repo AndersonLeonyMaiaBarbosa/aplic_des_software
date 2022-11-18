@@ -1,8 +1,9 @@
-function count() {
-    let n = prompt("Digite um número e veja quantos valores inteiros existem entre 1 (inclusive) e o num. que vc digitou:")
+function count(n, conjuntoNumeros) {
+    // let n = prompt("Digite um número e veja quantos valores inteiros existem entre 1 (inclusive) e o num. que vc digitou:");
 
-    let array = ((prompt(`Agora escreva os ${n} números separados por virgula ( Ex.: 1,2,3.5,4 )`)).split(","));
-    
+    // let array = ((prompt(`Agora escreva os ${n} números separados por virgula ( Ex.: 1,2,3.5,4 )`)).split(","));
+    let array = conjuntoNumeros.split(",");
+
     let totalOfNumbers = 0;
 
     for (let index = 0; index < array.length; index++) {
@@ -11,7 +12,9 @@ function count() {
         }
     }
 
-    alert(`Total de números inteiros: ${totalOfNumbers}`);
+   // alert(`Total de números inteiros: ${totalOfNumbers}`);
+
+   return `Total de números inteiros: ${totalOfNumbers}`;
 }
 
 function isInterger(strValue = "", n = "") {
@@ -31,3 +34,5 @@ function isInterger(strValue = "", n = "") {
         }
     }
 }
+
+module.exports = { count };

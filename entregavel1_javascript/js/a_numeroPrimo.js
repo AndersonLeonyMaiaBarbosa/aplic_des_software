@@ -1,5 +1,5 @@
-function numPrimo() {
-    let num = prompt("Digite um número e veja se ele é primo...");
+function numPrimo(num) {
+    // let num = prompt("Digite um número e veja se ele é primo...");
     let contDivs = 0;
 
     for (let index = 1; index <= num; index++) {
@@ -8,7 +8,11 @@ function numPrimo() {
         }
     }
 
-    contDivs > 2 ? alert("Não é primo.") : alert("É primo...");
+    // contDivs > 2 ? alert("Não é primo.") : alert("É primo...");
+
+    return contDivs > 2 ? "Não é primo." : "É primo...";
 
 }
+
+module.exports = { numPrimo };
 

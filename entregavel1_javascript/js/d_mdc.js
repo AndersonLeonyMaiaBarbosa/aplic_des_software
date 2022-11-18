@@ -1,6 +1,7 @@
-function mdc() {
+function mdc(values) {
 
-    let numbers = ((prompt("Informe um conjunto de números e veja o mdc (Use a vírgula para separar. Ex: 3,4,5,6")).split(",")).map((value) => {return parseInt(value)});
+    // let numbers = ((prompt("Informe um conjunto de números e veja o mdc (Use a vírgula para separar. Ex: 3,4,5,6")).split(",")).map((value) => {return parseInt(value)});
+    let numbers = convertArrayStringToInt(values);
 
     let mdcResult = 0;
 
@@ -24,5 +25,14 @@ function mdc() {
 
     // console.log(mdcResult);
 
-    alert(`MDC = ${mdcResult}`)
+    // alert(`MDC = ${mdcResult}`)
+
+    return `MDC = ${mdcResult}`
+
 }
+
+function convertArrayStringToInt(values) {
+   return values.split(",").map((value) => {return parseInt(value)});
+}
+
+module.exports = { mdc, convertArrayStringToInt }

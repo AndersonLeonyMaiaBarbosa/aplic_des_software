@@ -6,11 +6,16 @@ function getFibonacci(value) {
     }
 }
 
-function applyFibonacci() {
-    let value = parseInt(prompt("Digite um número e veja a sequencia Fibonacci: "));
+function applyFibonacci(value = 0) {
+    // let value = parseInt(prompt("Digite um número e veja a sequencia Fibonacci: "));
+    
     let sequence = "";
     for (let index = 0; index < value; index++) {
         sequence = sequence + getFibonacci(index) + " "
     }
-    alert(`Sequência Fibonacci para o número ( ${value} ): ${sequence}`);
+    
+    // alert(`Sequência Fibonacci para o número ( ${value} ): ${sequence}`);
+    return `Sequência Fibonacci para o número ( ${value} ): ${sequence}`;
 }
+
+module.exports = { getFibonacci, applyFibonacci };
